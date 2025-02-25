@@ -18,7 +18,7 @@ export function Conversation() {
 
       // Start the conversation with your agent
       await conversation.startSession({
-        agentId: "9tk4FkBEPYQCSykV0vIH", // Replace with your agent ID
+        agentId: "lZIy311U8pLxqoky5MBI", // Replace with your agent ID
       });
     } catch (error) {
       console.error("Failed to start conversation:", error);

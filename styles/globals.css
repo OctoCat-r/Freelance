@@ -25,3 +25,10 @@ body {
   background: var(--background);
   font-family: Poppins, Arial, Helvetica, sans-serif;
 }
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+}
