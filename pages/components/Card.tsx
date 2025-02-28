@@ -6,13 +6,21 @@ interface CardProps {
   heading1: string;
   heading2: string;
   text?: string;
+  handleClick: () => void;
 }
 
-export const Card = ({ imageSrc, heading1, heading2 }: CardProps) => {
+export const Card = ({
+  imageSrc,
+  heading1,
+  heading2,
+  handleClick,
+}: CardProps) => {
   return (
     <div
       className="flex bg-[#0D1719] shadow-xl rounded-lg p-3 gap-4 items-center hover:cursor-pointer  h-24"
-      onClick={() => console.log("Card clicked")}
+      onClick={() => {
+        handleClick();
+      }}
     >
       <Image
         src={imageSrc}

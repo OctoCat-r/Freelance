@@ -44,13 +44,20 @@ const Sidebar = () => {
           isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
         }`}
       >
-        <p className="font-poppins text-[#49F5DF] font-bold text-2xl">
-          AI <span className="font-normal text-white">Model</span>
+        <p className="font-poppins text-primary font-bold text-2xl">
+          Voice <span className="font-normal text-white">AI</span>
         </p>
 
-        <div className="relative mx-auto max-w-md rounded-full bg-gradient-to-tr from-black to-[#27A897] p-[0.5] shadow-lg mt-10">
-          <button className="flex bg-[#0D1719] rounded-full p-3 w-full justify-center gap-3 text-white items-center">
-            <PlusIcon className="w-5 h-5" /> Create
+        <div className="relative mx-auto max-w-md rounded-full bg-gradient-to-tr from-black to-[#27A897] p-[1px] shadow-lg mt-10">
+          <button
+            className="flex bg-[#0D1719] rounded-full p-3 w-full justify-center gap-3 text-white items-center text-sm"
+            disabled
+          >
+            <PlusIcon className="w-5 h-5" />
+            <p className="flex flex-col">
+              Add Agent{" "}
+              <span className="text-gray-600 text-xs">Coming soon</span>
+            </p>
           </button>
         </div>
 

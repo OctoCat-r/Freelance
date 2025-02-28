@@ -11,9 +11,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#49F5DF",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+      },
+      boxShadow: {
+        custom:
+          "0px 4px 10px rgba(73, 245, 223, 0.5), 0px -4px 10px rgba(73, 245, 223, 0.5), 4px 0px 10px rgba(73, 245, 223, 0.5), -4px 0px 10px rgba(73, 245, 223, 0.5)",
+        allsides: "0px 6px 20px, 0px -6px 20px, 6px 0px 20px, -6px 0px 20px",
       },
     },
   },
